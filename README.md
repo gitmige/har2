@@ -1,1 +1,2 @@
 har2
+Tässä harjoituksessa tutustutaan CodeIgniter Frameworkiin
