@@ -10,4 +10,9 @@ class Oppilas_model extends CI_Model{
     $this->db->where('idOpiskelija',$idPoista);
     $this->db->delete('opiskelija');
   }
+
+  public function lisaa_tietokantaan($lisaa_data){
+    $this->db->set($lisaa_data);
+    $this->db->insert('Opiskelija');
+  }
 }

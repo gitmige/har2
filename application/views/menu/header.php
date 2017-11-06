@@ -11,6 +11,11 @@
       <li><a href="<?php echo site_url('test/kolmas');?>">Kolmas</a></li>
       <li><a href="<?php echo site_url('test/neljas');?>">Neljäs</a></li>
       <li><a href="<?php echo site_url('oppilas/nayta_oppilaat');?>">Opiskelijat</a></li>
+      <li><a href="<?php echo site_url('login/avaa_lomake');?>">Kirjaudu</a></li>
+      <?php
+      if($_SESSION['kirjautunut']==true)
+      echo '<li><a href="'.site_url('login/kirjaudu_ulos').'">Kirjaudu ulos</a></li>';
+      ?>
     </ul>
 
   </body>
